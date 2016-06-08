@@ -15,10 +15,11 @@ All notable changes to this project will be documented in this file.
 Setup Version Control
 ```
 $ git init
-$ git add -A
+$ git add .
 $ git status
 $ git commit -m "Initialize Repository"
-$ git remote add origin git@github.org:rickygenz/insert_repo_name.git
+$ git remote add origin https://github.com/user/repo.git
+$ git remote -v # Verify new remote
 $ git push -u origin --all # pushes up the repo and its refs for the first time
 ```
 
