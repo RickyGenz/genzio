@@ -1,0 +1,150 @@
+/* Universal */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+/* View */
+
+.view {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  -webkit-transition: opacity 2s ease-in;
+  opacity: 0;
+  text-align: center;
+}
+
+body.loaded .info {
+  opacity: 1;
+}
+
+/* Image */
+
+.image img {
+  width: 175px;
+  margin-top: 1em;
+  border-radius: 10%;
+}
+
+/* Details */
+
+.name,
+.title {
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin: 0.25em 0;
+}
+
+.name {
+  color: #333;
+}
+
+.title {
+  color: #666;
+}
+
+.location,
+.contact {
+  color: #336699;
+}
+
+.contact:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+/* Contact */
+
+#contact.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#contact.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #336699;
+}
+
+#contact a:hover {
+  color: #999;
+}
+
+/* Resizing */
+
+@media screen and (max-height: 555px) and (min-width: 931px) {
+  
+  /* Info */
+  
+  .info {
+   text-align: left; 
+  }
+  
+  /* Profile */
+
+  #profile {
+    float: left;
+    margin-top: 1em;
+  }
+  
+  /* Image */
+
+  .image {
+    float: left;
+    margin-right: 2em;
+  }
+  
+  #contact {
+    clear: both;
+    float: left;
+    margin-left: 175px;
+    padding-left: 2em;
+    margin-top: -1em;
+  }
+  
+  /* Details */
+
+  .details {
+    float: left;
+  }
+  
+}
+
+/* Printing */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+  
+  #contact.hide {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+}
