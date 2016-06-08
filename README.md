@@ -6,6 +6,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.2] - 2016-06-07
+#### Removed
+- Duplicate files.
+
 ### [1.0.1] - 2016-06-07
 #### Added
 - Google Analytics Tracking ID

@@ -55,13 +55,16 @@ body.loaded .info {
   color: #666;
 }
 
-.location,
+.location {
+  color: #999;
+}
+
 .contact {
   color: #336699;
 }
 
 .contact:hover {
-  color: #999;
+  color: #bbb;
   cursor: pointer;
 }
 
@@ -83,7 +86,7 @@ body.loaded .info {
 }
 
 #contact a:hover {
-  color: #999;
+  color: #bbb;
 }
 
 /* Resizing */
