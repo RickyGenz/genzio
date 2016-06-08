@@ -6,6 +6,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.1] - 2016-06-07
+#### Added
+- Google Analytics Tracking ID
+
+#### Changed
+- Location & Contact now have unique colors.
+
 ### [1.0.0] - 2016-06-07
 #### Added
 - Initialize Repository
